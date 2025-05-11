@@ -1,0 +1,83 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#drum-machine {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    width: 320px;
+}
+
+/* Drum pad container */
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.drum-pad {
+    background-color: #444;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.drum-pad:active {
+    background-color: #ffc107;
+    box-shadow: 0 0 10px yellow;
+    transform: scale(0.95);
+}
+
+.drum-pad:hover {
+    background-color: #555;
+}
+
+/* Display area */
+#display {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Volume control styling */
+#volumeControl {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Responsive layout */
+@media (max-width: 480px) {
+    #drum-machine {
+        width: 280px;
+    }
+
+    .keys {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background-color: azure;
+}
+.box {
+    height: 100vh;
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.code {
+    width: 48%;
+    padding: 10px 0;
+}
+textarea {
+    width: 100%;
+    height: 97%;
+    font: 1em sans-serif;
+}
+.preview{
+    max-width: 48%;
+    height: 97%;
+    overflow:auto
+}
+p{
+    background-color: azure;
+    padding: 0 10px;
+    overflow: auto;
+}
