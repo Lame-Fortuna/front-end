@@ -7,7 +7,7 @@ body {
 .content {
     margin: auto;
     width: 80%;
-    height: 99.3vh;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -63,4 +63,10 @@ button:hover {
 button span {
     position: relative;
     z-index: 1;
+}
+
+@media (max-width: 1000px){
+    .content{
+        height: fit-content;
+    }
 }
